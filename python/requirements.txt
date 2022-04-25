@@ -1,0 +1,2 @@
+avro
+confluent_kafka[avro]
