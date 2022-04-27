@@ -1,2 +1,2 @@
 avro
-confluent_kafka[avro]
+confluent_kafka[avro]==1.8.2
