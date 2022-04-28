@@ -11,6 +11,8 @@
 ```shell
 cd python
 pip3 install -r requirements.txt 
+
+OPENBLAS="$(brew --prefix openblas)" MACOSX_DEPLOYMENT_TARGET=11.1 pip3 install "confluent_kafka[avro]==1.8.2"
 ```
 - [`#include <librdkafka/rdkafka.h> error: command '/usr/bin/clang' failed with exit code 1`](https://github.com/confluentinc/confluent-kafka-python/issues/184)
 ```shell
