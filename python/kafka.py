@@ -1,4 +1,4 @@
-from confluent_kafka import avro
+import avro
 from confluent_kafka.avro import AvroProducer
 
 
