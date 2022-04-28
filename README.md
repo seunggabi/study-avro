@@ -8,11 +8,17 @@
 - avro
 
 ### start
+- https://github.com/confluentinc/confluent-kafka-python/issues/184
+```
+# ~/.zshrc
+C_INCLUDE_PATH=/opt/homebrew/Cellar/librdkafka/1.8.2/include/
+export C_INCLUDE_PATH
+LIBRARY_PATH=/opt/homebrew/Cellar/librdkafka/1.8.2/lib
+export LIBRARY_PATH
+```
 ```shell
 cd python
 pip3 install -r requirements.txt 
-
-OPENBLAS="$(brew --prefix openblas)" MACOSX_DEPLOYMENT_TARGET=11.1 pip3 install "confluent_kafka[avro]==1.8.2"
 ```
 - [`#include <librdkafka/rdkafka.h> error: command '/usr/bin/clang' failed with exit code 1`](https://github.com/confluentinc/confluent-kafka-python/issues/184)
 ```shell
