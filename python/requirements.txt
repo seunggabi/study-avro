@@ -1,2 +1,2 @@
-avro
+avro-python3==1.8.2
 confluent_kafka[avro]==1.8.2
